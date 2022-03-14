@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/menu_live_score"
+            android:icon="@drawable/ic_live_score"
+            android:title="@string/canli_skor" />
+
+        <item
+            android:id="@+id/menu_fixture"
+            android:icon="@drawable/ic_fixture"
+            android:title="@string/fikstur_ve_sonucar" />
+
+        <item
+            android:id="@+id/menu_score"
+            android:icon="@drawable/ic_score"
+            android:title="@string/puan_durumu" />
+
+        <item
+            android:id="@+id/menu_leagues"
+            android:icon="@drawable/ic_leagues"
+            android:title="@string/ligler" />
+
+        <item
+            android:id="@+id/menu_tournaments"
+            android:icon="@drawable/ic_tournament"
+            android:title="@string/turnuvalar" />
+
+        <item
+            android:id="@+id/menu_news"
+            android:icon="@drawable/ic_news"
+            android:title="@string/haberler" />
+
+        <item
+            android:id="@+id/menu_contact_us"
+            android:icon="@drawable/ic_contact_us"
+            android:title="@string/bize_ulasin" />
+
+    </group>
+</menu>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fixtureChildFragment">
+
+    <fragment
+        android:id="@+id/fixtureChildFragment"
+        android:name="com.example.canliskorapp.fragments.adapters.FixtureChildFragment"
+        android:label="FixtureChildFragment" />
+    <fragment
+        android:id="@+id/standingsChildFragment"
+        android:name="com.example.canliskorapp.fragments.adapters.StandingsChildFragment"
+        android:label="StandingsChildFragment" />
+    <fragment
+        android:id="@+id/tournamentsFragment"
+        android:name="com.example.canliskorapp.fragments.TournamentsFragment"
+        android:label="TournamentsFragment" />
+    <activity
+        android:id="@+id/matchDetail"
+        android:name="com.canliskor.ui.MatchDetailActivity"
+        android:label="activity_match_detail"
+        tools:layout="@layout/activity_match_detail" >
+    </activity>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.canliskor.ui.home.HomeFragment"
+        android:label="fragment_fixture"
+        tools:layout="@layout/fragment_fixture">
+        <action
+            android:id="@+id/action_homeFragment_to_matchDetail"
+            app:destination="@id/matchDetail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchSummaryFragment"
+        android:name="com.example.canliskorapp.fragments.MatchSummaryFragment"
+        android:label="fragment_match_summary"
+        tools:layout="@layout/fragment_match_summary" />
+    <fragment
+        android:id="@+id/fixtureFragment"
+        android:name="com.example.canliskorapp.fragments.FixtureFragment"
+        android:label="FixtureFragment" />
+</navigation>

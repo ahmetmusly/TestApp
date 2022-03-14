@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ededed"
+        android:paddingVertical="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".5">
+
+        <com.canliskor.utils.CSCustomTextView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/ic_circle"
+            android:backgroundTint="@color/tab"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:fontFamily="@string/barlow_bold" />
+
+        <com.canliskor.utils.CSCustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:gravity="center|start"
+            android:text="Şampiyonlar Ligi Ön Elelmeleri"
+            android:textColor="@color/team_name"
+            android:textSize="13sp"
+            app:fontFamily="@string/barlow_regular" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#ededed"
+        android:paddingVertical="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll1">
+
+        <com.canliskor.utils.CSCustomTextView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/ic_circle"
+            android:backgroundTint="@color/circle2"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:fontFamily="@string/barlow_bold" />
+
+        <com.canliskor.utils.CSCustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:gravity="center|start"
+            android:text="Konfederasyon Ligi Ön Elelmeleri"
+            android:textColor="@color/team_name"
+            android:textSize="13sp"
+            app:fontFamily="@string/barlow_regular" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#ededed"
+        android:paddingVertical="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll2">
+
+        <com.canliskor.utils.CSCustomTextView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/ic_circle"
+            android:backgroundTint="@color/circle3"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:fontFamily="@string/barlow_bold" />
+
+        <com.canliskor.utils.CSCustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:gravity="center|start"
+            android:text="Düşme"
+            android:textColor="@color/team_name"
+            android:textSize="13sp"
+            app:fontFamily="@string/barlow_regular" />
+    </LinearLayout>
+
+    <com.canliskor.utils.CSCustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|start"
+        android:text="Sezon içerisinde iki (veya daha fazla) takımın eşit puana sahip olduğu durumlarda şu kurallar beraberliği bozmak için uygulanır:\n\t1.Averaj 2.Atılan gol Sezon sonunda ise şu prosedür beraberliği bozma için uygulanır:\n\t\t1.Birbirleri ile oynadıkları maçlar 2.Averaj 3.Atılan gol"
+        android:textColor="@color/team_name"
+        android:textSize="13sp"
+        app:fontFamily="@string/barlow_regular"
+        app:layout_constraintTop_toBottomOf="@id/ll3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

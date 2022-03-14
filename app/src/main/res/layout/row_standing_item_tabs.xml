@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/rec_row"
+    android:weightSum="7">
+
+    <com.canliskor.utils.CSCustomTextView
+        android:id="@+id/tv_O"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="O"
+        android:textColor="@color/white"
+        app:fontFamily="@string/barlow_bold" />
+
+    <com.canliskor.utils.CSCustomTextView
+        android:id="@+id/tv_G"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="G"
+        android:textColor="@color/white"
+        app:fontFamily="@string/barlow_bold" />
+
+    <com.canliskor.utils.CSCustomTextView
+        android:id="@+id/tv_B"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="B"
+        android:textColor="@color/white"
+        app:fontFamily="@string/barlow_bold" />
+
+    <com.canliskor.utils.CSCustomTextView
+        android:id="@+id/tv_M"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="M"
+        android:textColor="@color/white"
+        app:fontFamily="@string/barlow_bold" />
+
+    <com.canliskor.utils.CSCustomTextView
+        android:id="@+id/tv_A"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/white"
+        app:fontFamily="@string/barlow_bold" />
+
+    <com.canliskor.utils.CSCustomTextView
+        android:id="@+id/tv_Y"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Y"
+        android:textColor="@color/white"
+        app:fontFamily="@string/barlow_bold" />
+
+    <com.canliskor.utils.CSCustomTextView
+        android:id="@+id/tv_P"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="P"
+        android:textColor="@color/white"
+        app:fontFamily="@string/barlow_bold" />
+
+</LinearLayout>
+
+

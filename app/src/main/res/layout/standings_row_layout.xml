@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/standingsItemLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/standingsItemCLContenders"
+        android:layout_width="0.5dp"
+        android:layout_height="6dp"
+        android:layout_marginEnd="2dp"
+        android:background="#5E35B1"
+        app:layout_constraintStart_toStartOf="@id/standingsItemLayout"
+        app:layout_constraintTop_toTopOf="@id/standingsItemLayout"
+        app:layout_constraintBottom_toBottomOf="@id/standingsItemLayout"
+        />
+
+    <View
+        android:id="@+id/standingsItemUEFAContenders"
+        android:layout_width="0.5dp"
+        android:layout_height="6dp"
+        android:background="@color/design_default_color_error"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/standingsItemLayout"
+        app:layout_constraintStart_toStartOf="@id/standingsItemLayout"
+        app:layout_constraintTop_toTopOf="@id/standingsItemLayout" />
+
+    <TextView
+        android:id="@+id/standingsItemTeamStanding"
+        android:text="#"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="@id/standingsItemLayout"
+        app:layout_constraintStart_toEndOf="@id/standingsItemCLContenders"
+        app:layout_constraintBottom_toBottomOf="@id/standingsItemLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:id="@+id/standingsItem"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp"
+        app:layout_constraintStart_toEndOf="@id/standingsItemTeamStanding"
+        app:layout_constraintTop_toTopOf="@id/standingsItemLayout"
+        app:layout_constraintBottom_toBottomOf="@id/standingsItemLayout"
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:id="@+id/standingsItemTeamTitle"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp"
+        app:layout_constraintStart_toEndOf="@id/standingsItem"
+        app:layout_constraintTop_toTopOf="@id/standingsItemLayout"
+        app:layout_constraintBottom_toBottomOf="@id/standingsItemLayout"
+        android:text="TAKIM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:id="@+id/standingsItemPlayedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:padding="8dp"
+        android:text="O"
+        app:layout_constraintBottom_toBottomOf="@id/standingsItemLayout"
+        app:layout_constraintStart_toEndOf="@id/standingsItemTeamTitle"
+        app:layout_constraintStart_toStartOf="@id/standingsItemTeamTitle"
+        app:layout_constraintTop_toTopOf="@id/standingsItemLayout" />
+    <TextView
+        android:id="@+id/standingsItemWinsTitle"
+        app:layout_constraintStart_toEndOf="@id/standingsItemPlayedTitle"
+        app:layout_constraintTop_toTopOf="@id/standingsItemLayout"
+        app:layout_constraintBottom_toBottomOf="@id/standingsItemLayout"
+        android:text="G"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:id="@+id/standingsItemDrawsTitle"
+        app:layout_constraintStart_toEndOf="@id/standingsItemWinsTitle"
+        app:layout_constraintTop_toTopOf="@id/standingsItemLayout"
+        app:layout_constraintBottom_toBottomOf="@id/standingsItemLayout"
+        android:text="B"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:id="@+id/standingsItemLossesTitle"
+        app:layout_constraintTop_toTopOf="@id/standingsItemLayout"
+        app:layout_constraintBottom_toBottomOf="@id/standingsItemLayout"
+        app:layout_constraintStart_toEndOf="@id/standingsItemDrawsTitle"
+        android:text="M"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:id="@+id/standingsItemScoredGoalTitle"
+        app:layout_constraintStart_toEndOf="@id/standingsItemLossesTitle"
+        app:layout_constraintTop_toTopOf="@id/standingsItemLayout"
+        app:layout_constraintBottom_toBottomOf="@id/standingsItemLayout"
+        android:text="A"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:id="@+id/standingsItemAllowedGoalTitle"
+        app:layout_constraintStart_toEndOf="@id/standingsItemScoredGoalTitle"
+        app:layout_constraintTop_toTopOf="@id/standingsItemLayout"
+        app:layout_constraintBottom_toBottomOf="@id/standingsItemLayout"
+        android:text="Y"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:id="@+id/standingsItemPointTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        android:text="P"
+        app:layout_constraintBottom_toBottomOf="@id/standingsItemLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/standingsItemAllowedGoalTitle"
+        app:layout_constraintTop_toTopOf="@id/standingsItemLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

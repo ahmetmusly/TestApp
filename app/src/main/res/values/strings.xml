@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Canlı Skor</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content_description">contentDescription</string>
+
+    <string name="barlow_regular">fonts/barlow_regular.ttf</string>
+    <string name="barlow_medium">fonts/barlow_medium.ttf</string>
+    <string name="barlow_bold">fonts/barlow_bold.ttf</string>
+
+    <string name="puan_durumu">Puan Durumu</string>
+    <string name="ligler">Ligler</string>
+    <string name="turnuvalar">Turnuvalar</string>
+    <string name="haberler">Haberler</string>
+    <string name="bize_ulasin">Bize Ulaşın</string>
+    <string name="fikstur_ve_sonucar">Fikstür ve Sonuçlar</string>
+    <string name="canli_skor">Canlı Skor</string>
+</resources>
